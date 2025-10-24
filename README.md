@@ -42,20 +42,21 @@ const dbConfig = {
 
 (Na raiz do zip atividadeBanco.zip você deve encontrar algo parecido com):
 
-/atividadeBanco
-|
-|-- /dist/
-|   |-- ExercicioBancoDeDados.js   <-- código JavaScript compilado (output do tsc)
-|
-|-- /node_modules/                 <-- dependências (após npm install)
-|
-|-- ExercicioBancoDeDados.ts      <-- código-fonte TypeScript (exemplo)
-|
-|-- package.json                  <-- lista de dependências e scripts
-|
-|-- tsconfig.json                 <-- configuração do TypeScript
-|
-|-- README.md                     <-- este arquivo
+atividadeBanco/
+│
+├── src/
+│   ├── database/
+│   │   └── connection.ts
+│   ├── models/
+│   │   └── Aluno.ts
+│   ├── services/
+│   │   └── alunoService.ts
+│   └── index.ts
+│
+├── dist/            # Código compilado em JavaScript
+├── package.json
+├── tsconfig.json
+└── README.md
 
 Se a sua estrutura for diferente, adapte os comandos abaixo de acordo com os nomes dos arquivos presentes.
 
@@ -147,4 +148,5 @@ CREATE TABLE public.alunos (
 
 
 O Sistema de Armazenamento de Notas foi desenvolvido com o intuito de facilitar o gerenciamento de notas escolares, proporcionando uma solução prática e interativa para cadastro e consulta via terminal.Esse projeto serviu como uma excelente oportunidade para aplicar conceitos de banco de dados, TypeScript e integração com Node.js, reforçando a importância da organização e automação de dados acadêmicos.
+
 
