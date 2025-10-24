@@ -1,4 +1,4 @@
-Projeto: AtividadeBanco — Conexão TypeScript com PostgreSQL
+# Projeto: AtividadeBanco — Conexão TypeScript com PostgreSQL
 
 Olá, professor!
 
@@ -144,5 +144,6 @@ CREATE TABLE public.alunos (
 
 
 Conclusão
+
 
 O Sistema de Armazenamento de Notas foi desenvolvido com o intuito de facilitar o gerenciamento de notas escolares, proporcionando uma solução prática e interativa para cadastro e consulta via terminal.Esse projeto serviu como uma excelente oportunidade para aplicar conceitos de banco de dados, TypeScript e integração com Node.js, reforçando a importância da organização e automação de dados acadêmicos.
