@@ -4,13 +4,13 @@ Olá, professor!
 
 Este projeto foi desenvolvido com o objetivo de armazenar e gerenciar as notas dos alunos de forma simples e eficiente. A aplicação utiliza Node.js com TypeScript e se conecta a um banco de dados PostgreSQL, permitindo o cadastro, consulta e manipulação das informações diretamente pelo terminal.
 
-Link de apoio para criar o container PostgreSQL
+## Link de apoio para criar o container PostgreSQL
 
 Caso precise criar um container PostgreSQL (Docker), utilize a postagem indicada pelo professor:
 
 https://www.eduardopopovici.com/2025/09/como-montar-um-conteiner-com-postgre.html
 
-Descrição do Projeto
+## Descrição do Projeto
 
 Este projeto é um exemplo didático para mostrar como uma aplicação em TypeScript (Node.js) se conecta a um banco de dados PostgreSQL e insere dados. A ideia é simples e voltada para prática em sala de aula:
 
@@ -24,7 +24,7 @@ Encerrar a conexão de forma segura.
 
 
 
-Aviso de Segurança (IMPORTANTE)
+## Aviso de Segurança (IMPORTANTE)
 
 Se o projeto contém credenciais (usuário/senha/host) diretamente no código (hardcoding), isso é perigoso e não deve ser feito em projetos reais. Em ambiente de aula isso pode ser aceito para simplificação, mas em produção use variáveis de ambiente (arquivo .env) e bibliotecas como dotenv.
 
@@ -38,7 +38,7 @@ const dbConfig = {
   port: 5432,
 };
 
-Estrutura esperada do projeto
+## Estrutura esperada do projeto
 
 (Na raiz do zip atividadeBanco.zip você deve encontrar algo parecido com):
 
@@ -59,7 +59,7 @@ Estrutura esperada do projeto
 
 Se a sua estrutura for diferente, adapte os comandos abaixo de acordo com os nomes dos arquivos presentes.
 
-Pré-requisitos
+## Pré-requisitos
 
 Node.js (versão compatível com o projeto)
 
@@ -75,11 +75,11 @@ Como executar (passo a passo)
 
 Abra um terminal na pasta do projeto (atividadeBanco) e siga os passos:
 
-1️⃣ Clonar o repositório
+### 1️⃣ Clonar o repositório
 
 git clone <url-do-repositorio>
 
-2️⃣ Instalar dependências
+### 2️⃣ Instalar dependências
 
 # Instalar as bibliotecas de produção
 npm install pg readline-sync
@@ -87,23 +87,23 @@ npm install pg readline-sync
 # Instalar o TypeScript e os tipos como dependências de desenvolvimento
 npm install -D typescript @types/pg @types/readline-sync
 
-3️⃣ Compilar TypeScript (gera a pasta dist com o .js correspondente)
+### 3️⃣ Compilar TypeScript (gera a pasta dist com o .js correspondente)
 
 npx tsc
 
-4️⃣ Executar o script compilado (exemplo de nome — adapte se necessário)
+### 4️⃣ Executar o script compilado (exemplo de nome — adapte se necessário)
 
 node dist/ExercicioBancoDeDados.js
 
-5️⃣ Verificar o banco de dados
+### 5️⃣ Verificar o banco de dados
 
 Siga as perguntas no terminal e, ao finalizar, verifique no pgAdmin ou via psql se os registros apareceram na tabela alunos.
 
-Script SQL do banco de dados
+## Script SQL do banco de dados
 
 Abaixo está o script solicitado para criar a tabela alunos no schema public. Em seguida o mesmo script com comentários linha a linha explicativos.
 
-Script SQL
+### Script SQL
 
 CREATE TABLE public.alunos (
     nome VARCHAR(50),
@@ -114,7 +114,7 @@ CREATE TABLE public.alunos (
     mediah NUMERIC(3,1)
 );
 
-Script SQL comentado (linha a linha)
+### Script SQL comentado (linha a linha)
 
 -- Cria uma tabela chamada 'alunos' no schema 'public'.
 CREATE TABLE public.alunos (
@@ -143,7 +143,8 @@ CREATE TABLE public.alunos (
 
 
 
-Conclusão
+## Conclusão
 
 
 O Sistema de Armazenamento de Notas foi desenvolvido com o intuito de facilitar o gerenciamento de notas escolares, proporcionando uma solução prática e interativa para cadastro e consulta via terminal.Esse projeto serviu como uma excelente oportunidade para aplicar conceitos de banco de dados, TypeScript e integração com Node.js, reforçando a importância da organização e automação de dados acadêmicos.
+
