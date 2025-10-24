@@ -45,15 +45,15 @@ const dbConfig = {
 atividadeBanco/
 │
 ├── src/
-│   ├── database/
-│   │   └── connection.ts
-│   ├── models/
-│   │   └── Aluno.ts
-│   ├── services/
-│   │   └── alunoService.ts
-│   └── index.ts
+│ ├── database/
+│ │ └── connection.ts
+│ ├── models/
+│ │ └── Aluno.ts
+│ ├── services/
+│ │ └── alunoService.ts
+│ └── index.ts
 │
-├── dist/            # Código compilado em JavaScript
+├── dist/ # Código compilado em JavaScript
 ├── package.json
 ├── tsconfig.json
 └── README.md
@@ -148,5 +148,6 @@ CREATE TABLE public.alunos (
 
 
 O Sistema de Armazenamento de Notas foi desenvolvido com o intuito de facilitar o gerenciamento de notas escolares, proporcionando uma solução prática e interativa para cadastro e consulta via terminal.Esse projeto serviu como uma excelente oportunidade para aplicar conceitos de banco de dados, TypeScript e integração com Node.js, reforçando a importância da organização e automação de dados acadêmicos.
+
 
 
