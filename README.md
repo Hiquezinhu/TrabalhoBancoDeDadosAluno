@@ -42,6 +42,7 @@ const dbConfig = {
 
 (Na raiz do zip atividadeBanco.zip você deve encontrar algo parecido com):
 
+```
 atividadeBanco/
 │
 ├── src/
@@ -57,6 +58,7 @@ atividadeBanco/
 ├── package.json
 ├── tsconfig.json
 └── README.md
+```
 
 Se a sua estrutura for diferente, adapte os comandos abaixo de acordo com os nomes dos arquivos presentes.
 
@@ -106,6 +108,7 @@ Abaixo está o script solicitado para criar a tabela alunos no schema public. Em
 
 ### Script SQL
 
+```
 CREATE TABLE public.alunos (
     nome VARCHAR(50),
     serie INTEGER,
@@ -114,6 +117,7 @@ CREATE TABLE public.alunos (
     mediag NUMERIC(3,1),
     mediah NUMERIC(3,1)
 );
+```
 
 ### Script SQL comentado (linha a linha)
 
@@ -148,6 +152,7 @@ CREATE TABLE public.alunos (
 
 
 O Sistema de Armazenamento de Notas foi desenvolvido com o intuito de facilitar o gerenciamento de notas escolares, proporcionando uma solução prática e interativa para cadastro e consulta via terminal.Esse projeto serviu como uma excelente oportunidade para aplicar conceitos de banco de dados, TypeScript e integração com Node.js, reforçando a importância da organização e automação de dados acadêmicos.
+
 
 
 
